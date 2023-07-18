@@ -1,0 +1,18 @@
+View Reslover in Spring MVC:-
+===========================
+  In Spring MVC, a View Resolver is a design pattern used to map logical view names returned by a controller to actual view implementations (templates) that will be used to render the response to the client. The main purpose of a View Resolver is to decouple the controller's logic from the view-rendering mechanism, providing flexibility and ease of view management in the application.
+
+Here's how the View Resolver pattern works in Spring MVC:
+
+-> Controller handles the request: When a user makes a request to the Spring MVC application, it is first handled by a controller. The 
+   controller processes the request, performs necessary business logic, and prepares the model data to be displayed in the view.
+
+-> Controller returns a logical view name: After processing the request, the controller returns a logical view name as a string. The logical 
+   view name is an identifier for the view that should be used to render the response.
+
+-> View Resolver maps the logical view name: The View Resolver intercepts the logical view name returned by the controller and translates it 
+   into an actual view implementation. It looks up the view using the logical view name and resolves it to a specific view template.
+
+-> View renders the response: Once the View Resolver has determined the actual view template, it passes the model data (prepared by the 
+   controller) to the view. The view then renders the response using the model data and generates the final output, typically in HTML, which 
+   is sent back to the client.

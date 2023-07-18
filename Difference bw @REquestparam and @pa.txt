@@ -1,0 +1,31 @@
+Difference b/w @REquestparam and @pathvariable anotations:-
+==========================================================
+The main differences between `@RequestParam` and `@PathVariable` annotations in Spring MVC:
+____________________________________________________________________________________________________________
+| Feature                | @RequestParam                       | @PathVariable                              |
+|------------------------|------------------------------------ |------------------------------------------  |
+| Purpose                | Binds request parameters            | Extracts values from URI path variables    |
+|                        |                                     |                                            |
+| Annotation Type        | Method parameter                    | Method parameter                           |
+|                        |                                     |                                            |
+| Usage                  | Used for query parameters in the URL| Used for path variables in the URL         |
+|                        |                                     |                                            | 
+| Placement              | Applied to method parameters        | Applied to method parameters               |
+|                        |                                     |                                            |
+| Example URL            | example.com/path?param=value        | example.com/path/{variable}                |
+|                        |                                     |                                            |
+| Required parameter     | Can be optional or required         | Always required                            |
+|                        |                                     |                                            |
+| Default value          | Can provide a default value         | No default value                           |
+|                        |                                     |                                            |
+| Data Conversion        | Can convert data types if needed    | Directly maps to the method parameter type |
+|                        |                                     |                                            |
+| Multiple Parameters    | Can handle multiple parameters      | Typically used for single parameter        |
+|                        |                                     |                                            |
+| Flexibility            | Offers more flexibility in handling | More suitable for simple URLs              |
+|                        | complex query strings               |                                            |
+|                        |                                     |                                            | 
+| Security Considerations| Query parameters are visible in the | Path variables may also expose sensitive   |                                        |                        | URL and may expose sensitive        | data if not handled properly, but they are |
+|                        |  information                        | not as visible in URLs as query parameters |
+|________________________|_____________________________________|____________________________________________|                           
+                           

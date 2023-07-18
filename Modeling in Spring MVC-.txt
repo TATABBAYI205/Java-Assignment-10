@@ -1,0 +1,23 @@
+Modeling in Spring MVC:-
+======================
+  In Spring MVC, the Model represents the data that is being displayed and processed by the web application. It is one of the three core components in the Model-View-Controller (MVC) architectural pattern, which Spring MVC follows.
+
+The Model is responsible for holding the application's data and business logic. It acts as an intermediary between the controller and the view, providing a way for the controller to pass data to the view for rendering and presentation purposes. The primary role of the Model is to encapsulate the application's state and make it available to the view layer.
+
+Key characteristics and responsibilities of the Model in Spring MVC:
+
+-> Data Storage: The Model holds the application's data, which can be any Java object or a collection of objects. This data represents the 
+   current state of the application and the information that needs to be displayed in the view.
+
+-> Interaction with Controller: The Controller interacts with the Model to retrieve or update data as needed. It populates the Model with 
+   data from the database, external services, or any other data source and prepares it for display in the view.
+
+-> Passing Data to the View: Once the Controller populates the Model with data, it passes the Model to the View. The View then uses this 
+   data to render the user interface and present the information to the end-user.
+
+-> Scope Management: The Model can manage different scopes like request scope, session scope, or application scope, depending on the 
+   configuration. Data stored in the Model's request scope is only available during the current request-response cycle, while session       
+   scope allows data to persist across multiple requests for a particular user session.
+
+-> Business Logic: In addition to data storage, the Model may also contain business logic that processes and manipulates the data before 
+   presenting it in the view.

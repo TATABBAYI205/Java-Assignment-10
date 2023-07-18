@@ -1,0 +1,22 @@
+Benefits of using Spring MVC:-
+============================
+
+-> Loose Coupling: The framework promotes loose coupling between the Model, View, and Controller, making it easier to maintain and modify 
+   different components independently.
+
+-> Extensibility: Spring MVC is designed to be easily extensible, allowing developers to plug in various components to customize the 
+   behavior of their applications.
+
+-> Testability: The MVC architecture enables developers to test their applications more effectively by allowing separate testing of each 
+   component.
+
+-> Annotation-based Configuration: With the introduction of annotations, configuration has become more straightforward and less XML-heavy.
+
+-> Support for RESTful Web Services: Spring MVC provides features to build RESTful web services, allowing developers to expose their   
+   application functionalities via standard HTTP methods.
+
+-> Internationalization and Localization: The framework supports internationalization and localization, making it easier to develop 
+   applications that cater to a global audience.
+
+-> Integration with other Spring modules: Spring MVC seamlessly integrates with other Spring modules, such as Spring Security for 
+   authentication and authorization.

@@ -1,0 +1,29 @@
+RESTful web services:-
+====================
+REST stands for Representational State Transfer. It is an architectural style and set of constraints for designing networked applications and web services. REST is not a standard or protocol but rather a design approach that leverages the existing protocols and technologies of the web, such as HTTP, to build scalable and maintainable distributed systems.
+
+RESTful web services are web services that adhere to the principles of REST. They are designed to be simple, lightweight, and easy to understand. RESTful web services use standard HTTP methods (GET, POST, PUT, DELETE, etc.) to perform CRUD (Create, Read, Update, Delete) operations on resources identified by URLs.
+
+Key characteristics of RESTful web services:
+
+-> Statelessness: Each request from a client to the server must contain all the information needed to understand and process the request. 
+   The server does not store any information about the client's state between requests. This simplifies the server's architecture and 
+   enhances scalability.
+
+-> Resource-based: RESTful web services are built around resources, which can be any entity or object exposed by the server. Resources are 
+   identified by URLs, and clients interact with these resources using standard HTTP methods.
+
+-> Uniform Interface: RESTful web services provide a uniform and consistent interface, making it easy for clients to understand how to 
+   interact with the server. This is achieved through well-defined HTTP methods and standard status codes.
+
+-> Representation: Resources are represented in different formats (e.g., JSON, XML, HTML). Clients can request a specific representation 
+   by setting the appropriate Accept header in the request.
+
+-> Stateless Communication: Clients and servers communicate through individual requests and responses, without retaining any state between 
+   requests. Each request is independent and self-contained.
+
+-> Hypermedia as the Engine of Application State (HATEOAS): This principle states that the server should provide hypermedia links in the 
+   responses, guiding the client on the available actions and transitions to other resources.
+
+-> Cacheability: Responses from the server can be explicitly marked as cacheable or non-cacheable, improving performance and reducing 
+   unnecessary requests.

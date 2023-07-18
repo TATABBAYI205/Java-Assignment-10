@@ -1,0 +1,45 @@
+Difference b/w Restful and SOAP Webservices :-
+===========================================
+RESTful web services and SOAP web services are two different approaches for building web services that allow communication between different applications over the internet. Here are the key differences between them:
+
+Protocol and Standards:
+
+-> RESTful: 
+     -> REST (Representational State Transfer) is an architectural style that uses standard HTTP methods (GET, POST, PUT, DELETE, 
+        etc.) for communication. It typically relies on JSON or XML as data formats.
+     -> SOAP: SOAP (Simple Object Access Protocol) is a protocol that uses XML as the message format and can operate over various   
+        transport protocols, such as HTTP, SMTP, TCP, etc.
+
+-> Message Format:
+     -> RESTful: RESTful web services commonly use lightweight data formats like JSON for message payloads, making it easy to read and   
+        parse by both humans and machines.
+     -> SOAP: SOAP uses XML as its message format, which can be more verbose and complex than JSON. XML requires additional parsing and   
+        processing overhead.
+
+-> Transport Protocol:
+     -> RESTful: RESTful web services typically use HTTP as the transport protocol. They can also support other protocols, but HTTP is the 
+        most commonly used due to its simplicity and widespread support.
+     -> SOAP: SOAP can operate over various transport protocols, including HTTP, SMTP, TCP, and more. However, it is most commonly used 
+        with HTTP.
+
+-> Ease of Use and Simplicity:
+     -> RESTful: RESTful web services are considered simpler to implement and use due to their usage of standard HTTP methods and 
+        lightweight data formats. They are often preferred for simple scenarios and for mobile applications.
+     -> SOAP: SOAP web services are more complex and require additional XML processing. The use of various WS-* standards for security and 
+        other functionalities can add to the complexity.
+
+-> Statelessness:
+     -> RESTful: RESTful web services are stateless by design. Each request from the client to the server must contain all the necessary 
+        information, and the server does not store client state between requests.
+     -> SOAP: SOAP web services can be either stateless or stateful, depending on how they are designed and implemented.
+
+-> Error Handling:
+     -> RESTful: RESTful web services commonly use standard HTTP status codes for error handling, making it easy to understand and 
+        interpret error responses.
+     -> SOAP: SOAP uses its own fault messages for error handling, which can vary between different implementations.
+        
+-> Standards and Interoperability:
+     -> RESTful: RESTful web services do not have a strict set of standards and specifications, which may lead to differences in    
+        implementations between services.
+     -> SOAP: SOAP has strict standards and specifications, making it more suitable for scenarios where strict interoperability between  
+        different systems is required. 
